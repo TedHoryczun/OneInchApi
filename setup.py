@@ -10,4 +10,6 @@ setup(
     author='tedhoryczun',
     author_email='',
     description='one_inch Api',
+    requires=["requests"]
+
 )
