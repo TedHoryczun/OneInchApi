@@ -2,12 +2,12 @@ import setuptools
 from setuptools import setup
 
 setup(
-    name='OneInch',
+    name='one_inch',
     version='0.1',
     packages=setuptools.find_packages(),
     url='',
     license='',
     author='tedhoryczun',
     author_email='',
-    description='OneInch Api',
+    description='one_inch Api',
 )
