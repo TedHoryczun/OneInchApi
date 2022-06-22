@@ -23,12 +23,12 @@ class OneInchApi:
         return requests.get(url)
 
     def do_swap(self, from_token_addr, to_token_addr, amount, slippage, protocol_ids: str,
-                disble_estimate: bool) -> any:
+                disble_estimate: str) -> any:
         url = self.base_url + self.chain_id + '/swap?fromTokenAddress=' + from_token_addr + \
               '&toTokenAddress=' + to_token_addr + \
               '&amount=' + amount + '&fromAddress=' + self.wallet + \
               '&slippage=' + slippage + \
-              '&disableEstimate=' + str(disble_estimate) + '&burnChi=false&allowPartialFill=false'
+              '&disableEstimate=' + disble_estimate + '&burnChi=false&allowPartialFill=false'
         if protocol_ids != '':
             url += '&protocols=' + protocol_ids
         return requests.get(url)
