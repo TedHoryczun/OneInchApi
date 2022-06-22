@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='one_inch',
-    version='0.2',
+    version='0.3',
     packages=setuptools.find_packages(),
     url='',
     license='',
